@@ -1,0 +1,15 @@
+{
+    "name": "servidor-node-synapsis",
+    "version": "1.0.0",
+    "description": "Servidor web Node.js con mapeo de puertos Docker - Equipo Synapsis Tech",
+    "main": "server.js",
+    "dependencies": {
+      "express": "^4.18.2"
+    },
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": ["node", "express", "docker", "webserver"],
+    "author": "Synapsis Tech",
+    "license": "MIT"
+  }
