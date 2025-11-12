@@ -2,14 +2,6 @@
 
 Proyecto de servidor web Node.js con Express que demuestra el mapeo de puertos en contenedores Docker.
 
-## Información del Proyecto
-
-- **Nombre**: servidor-node-synapsis
-- **Versión**: 1.0.0
-- **Puerto del servidor**: 4000
-- **Tecnologías**: Node.js, Express, Docker
-- **Equipo**: Synapsis Tech
-
 ## Estructura del Proyecto
 
 ```
