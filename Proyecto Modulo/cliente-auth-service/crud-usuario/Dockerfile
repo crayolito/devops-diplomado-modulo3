@@ -40,5 +40,19 @@ COPY --from=builder /app/build/libs/crud-usuario-0.0.1-SNAPSHOT.jar app.jar
 # Exponer el puerto 8080
 EXPOSE 8080
 
+# VULNERABILIDAD DE PRUEBA - Secretos hardcodeados
+ENV DB_PASSWORD=123456
+ENV API_KEY=123456
+ENV ADMIN_TOKEN=123456
+
 # Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
+# VULNERABILIDAD DE PRUEBA - Ejecutar como root (no usar usuario no root)
+USER root
+
+# VULNERABILIDAD DE PRUEBA - Exponer informacion del sistema
+# Aqui se puede exponer informacion del sistema, 
+#como el nombre del sistema operativo, la version del sistema operativo, la version de java, etc.
+RUN echo "Sistema vulnerable" > /etc/system-info
+

@@ -25,6 +25,9 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// VULNERABILIDAD DE PRUEBA - Dependencia con CVE conocido - // CVE-2015-6420
+    implementation 'commons-collections:commons-collections:3.2.1' 
 }
 
 tasks.named('test') {
