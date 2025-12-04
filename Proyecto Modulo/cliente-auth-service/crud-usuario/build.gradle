@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-description = 'CRUD USUARIOS'
+description = 'Auth Service - Librería Páginas de Bolivia'
 
 java {
 	toolchain {
@@ -19,14 +19,12 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	runtimeOnly 'com.h2database:h2'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-	// VULNERABILIDAD DE PRUEBA - Dependencia con CVE conocido - // CVE-2015-6420
+	// VULNERABILIDAD DE PRUEBA - Dependencia con CVE conocido - CVE-2015-6420
     implementation 'commons-collections:commons-collections:3.2.1' 
 }
 
