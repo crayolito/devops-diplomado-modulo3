@@ -35,8 +35,8 @@
 
 ### Información que necesitarás:
 
-- **Suscripción ID**: `3fed9023-235a-420a-8033-dbac4da1753e`
-- **Tenant ID**: `3221682f-2dda-4422-932b-ad9407a1645f`
+- **Suscripción ID**: `00000000-0000-0000-0000-000000000000` ⚠️ _EJEMPLO - Reemplazar con tu ID real_
+- **Tenant ID**: `11111111-1111-1111-1111-111111111111` ⚠️ _EJEMPLO - Reemplazar con tu ID real_
 - **Usuario invitado**: `JSAHONERO_farmacorp.com#EXT#@juancarlosguinchalopezgmail.onmicrosoft.com`
 - **Organización Azure DevOps**: `https://dev.azure.com/juancarlosguinchalopez`
 - **Proyecto**: `PROYECTO_FINAL`
